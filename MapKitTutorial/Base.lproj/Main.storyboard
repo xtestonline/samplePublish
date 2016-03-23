@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapKitTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agL-BR-nbR">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YZ4-F1-epT">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    </mapView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="YZ4-F1-epT" firstAttribute="top" secondItem="agL-BR-nbR" secondAttribute="top" id="Kmr-pN-1jz"/>
+                                    <constraint firstAttribute="trailing" secondItem="YZ4-F1-epT" secondAttribute="trailing" id="lmd-5j-3ef"/>
+                                    <constraint firstAttribute="bottom" secondItem="YZ4-F1-epT" secondAttribute="bottom" id="nFP-s2-iMU"/>
+                                    <constraint firstItem="YZ4-F1-epT" firstAttribute="leading" secondItem="agL-BR-nbR" secondAttribute="leading" id="rag-Ra-ZoR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="agL-BR-nbR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="85j-oy-af7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="agL-BR-nbR" secondAttribute="bottom" id="Dtx-H0-4S6"/>
+                            <constraint firstAttribute="trailing" secondItem="agL-BR-nbR" secondAttribute="trailing" id="IBJ-KM-jde"/>
+                            <constraint firstItem="agL-BR-nbR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lpv-Vq-gi8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="YZ4-F1-epT" id="irI-aa-pEF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
